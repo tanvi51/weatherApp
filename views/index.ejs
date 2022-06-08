@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="heading"><i class='fas fa-cloud-sun-rain' style='font-size:36px'></i> Weather Check</h1>
+      <fieldset>
+        <form action="/" method="post">
+          <input name="city" type="text" class="input" placeholder="Enter a City" required>
+          <input type="submit" class="button" value="Get Weather">
+        </form>
+        <% if(weather !== null){ %>
+            <p><%= weather %></p>
+          <% } %>
+  
+          <% if(error !== null){ %>
+            <p><%= error %></p>
+          <% } %>
+      </fieldset>
+    </div>
+  </body>
+</html>
