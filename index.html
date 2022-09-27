@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>🌩Weather</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4" style="text-align: center" >⛅Weather Finder</h1>
+      <p class="lead" style="text-align: center">Find local weather around the world.</p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <form action="/" method="post" style="text-align: center">
+      <div class="input-group mb-2">
+      <input type="text" class="form-control" placeholder="Enter City Name" name="cityName">
+      <div class="input-group-append">
+        <select id="tempUnit" class="form-control" style="border-radius: 0;" name="unit">
+          <option selected value="c">Celcius</option>
+          <option value="f">Fahrenheit</option>
+        </select>
+      </div>
+    </div>
+    <div class="button-container">
+      <button class="btn btn-outline-secondary" type="submit">Get Weather</button>
+    </div>
+    </form>
+   </div>
+  </body>
+</html>
